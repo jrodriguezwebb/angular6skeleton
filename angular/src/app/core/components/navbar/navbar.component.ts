@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { CoreService, OtherCoreService } from '../../services/index.core.service';
 
 @Component({
   selector: 'app-navbar',
