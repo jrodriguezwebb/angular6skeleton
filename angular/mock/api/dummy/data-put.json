@@ -1,0 +1,49 @@
+[
+    {
+        "ActivityNumber": "A1",
+        "ActivityTypeCCM2Id": 31046421,
+        "ActivityTitle": "TEST",
+        "TotalNumberOfParticipants": 5133,
+        "NumberOfSpecialNeedsParticipants": 458,
+        "NumberOfFewerOpportunitiesParticipants": 110,
+        "NumberOfYoungParticipants": 113,
+        "NumberOfAccompanyingPersons": 121,
+        "MobilityActivityFlow": [],
+        "Valid": true
+    },
+    {
+        "ActivityNumber": "A2",
+        "ActivityTypeCCM2Id": 31046420,
+        "ActivityTitle": "TEST A2",
+        "TotalNumberOfParticipants": 90,
+        "NumberOfSpecialNeedsParticipants": 166,
+        "NumberOfFewerOpportunitiesParticipants": 76,
+        "NumberOfYoungParticipants": 75,
+        "NumberOfAccompanyingPersons": 126,
+        "MobilityActivityFlow": [],
+        "Valid": false
+    },
+    {
+        "ActivityNumber": "A3",
+        "ActivityTypeCCM2Id": 31046421,
+        "TotalNumberOfParticipants": 40,
+        "NumberOfSpecialNeedsParticipants": 19,
+        "NumberOfFewerOpportunitiesParticipants": 19,
+        "NumberOfYoungParticipants": 19,
+        "NumberOfAccompanyingPersons": 19,
+        "MobilityActivityFlow": [],
+        "Valid": false
+    },
+    {
+        "ActivityNumber": "A4",
+        "ActivityTypeCCM2Id": 31046421,
+        "ActivityTitle": "TEST A4",
+        "TotalNumberOfParticipants": 18,
+        "NumberOfSpecialNeedsParticipants": 5,
+        "NumberOfFewerOpportunitiesParticipants": 7,
+        "NumberOfYoungParticipants": 9,
+        "NumberOfAccompanyingPersons": 6,
+        "MobilityActivityFlow": [],
+        "Valid": true
+    }
+]

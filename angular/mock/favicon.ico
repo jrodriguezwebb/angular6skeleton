@@ -1,0 +1,3 @@
+// JavaScript Document
+var path = require("path");
+console.log("path.delimiter: '" + path.delimiter +"'");
