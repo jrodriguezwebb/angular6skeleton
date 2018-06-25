@@ -6,7 +6,7 @@ import { LoadingSpinnerComponent } from './components/loading-spinner/loading-sp
   imports: [
     CommonModule
   ],
-  exports:[ LoadingSpinnerComponent, CommonModule ],
+  exports: [ LoadingSpinnerComponent, CommonModule ],
   declarations: [ LoadingSpinnerComponent ],
   providers: [  ]
 })
