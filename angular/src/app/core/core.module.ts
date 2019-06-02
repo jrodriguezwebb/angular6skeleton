@@ -8,7 +8,6 @@ import { CoreService } from './services/core.service';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 
 // posiblemente habra que importar el router
 // import { Routes, RouterModule } from '@angular/router';
@@ -21,7 +20,6 @@ export function createTranslateLoader(http: HttpClient) {
   imports: [
     CommonModule,
     HttpClientModule,
-    HttpModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

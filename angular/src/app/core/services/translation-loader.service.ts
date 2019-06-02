@@ -1,4 +1,4 @@
-import { Http } from '@angular/http';
+
 /* import { Observable } from 'rxjs/Observable'; */
 import { TranslateLoader } from '@ngx-translate/core';
 
@@ -6,12 +6,13 @@ import { TranslateLoader } from '@ngx-translate/core';
 import { of } from 'rxjs/internal/observable/of';
 import { map } from 'rxjs/internal/operators/map';
 import { zip } from 'rxjs/internal/observable/zip';
+import { HttpClient } from '@angular/common/http';
 
 export class TranslationLoader implements TranslateLoader {
   translations: Array<any> = [];
 
   constructor(
-    private http: Http,
+    private http: HttpClient,
     private source: Array<any> = ['./assets/i18n/']
   ) {}
 
@@ -20,7 +21,7 @@ export class TranslationLoader implements TranslateLoader {
       return of(this.translations[lang]);
     } else {
       return zip(
-        ...this.source.map(e => this.http.get(`${e}${lang}.json`).pipe(map(res => res.json())),
+        ...this.source.map(e => this.http.get(`${e}${lang}.json`).pipe(map(res => res)),
         (...res) => {
           this.translations[lang] = Object.assign({}, ...res);
           return this.translations[lang];

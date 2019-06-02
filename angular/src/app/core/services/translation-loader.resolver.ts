@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router';
 import { Observable } from 'rxjs/internal/Observable';
 import { of } from 'rxjs/internal/observable/of';
@@ -8,13 +8,14 @@ import { map } from 'rxjs/internal/operators/map';
 import { TranslationLoader } from './translation-loader.service';
 import { TranslateModule, TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
+
 @Injectable()
 export class TranslationLoaderResolver implements Resolve<any> {
   translations: Array<any> = [];
   currentSource: Array<any>;
 
   constructor(
-    private http: Http,
+    private http: HttpClient,
     private translateService: TranslateService
   ) {
     this.translateService.onLangChange.subscribe(
