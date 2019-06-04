@@ -8,9 +8,7 @@ import { CoreService } from './services/core.service';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-
-// posiblemente habra que importar el router
-// import { Routes, RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -18,6 +16,7 @@ export function createTranslateLoader(http: HttpClient) {
 
 @NgModule({
   imports: [
+    BrowserModule,
     CommonModule,
     HttpClientModule,
     TranslateModule.forRoot({

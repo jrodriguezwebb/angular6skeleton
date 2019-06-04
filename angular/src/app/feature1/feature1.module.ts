@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
 import { SharedModule } from '../shared/shared.module';
+import { Feature1Component } from './feature1.component';
+import { Feature1RoutingModule } from './feature1.routing.module';
+import { SubfeatureComponent } from './subfeature/subfeature.component';
 
 @NgModule({
   imports: [
-    RouterModule,
-    SharedModule
+    SharedModule,
+    Feature1RoutingModule
   ],
-  declarations: []
+  declarations: [
+    Feature1Component,
+    SubfeatureComponent
+  ]
 })
 export class Feature1Module { }
